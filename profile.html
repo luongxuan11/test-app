@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>profile</title>
+  </head>
+  <body>
+    <section class="profile rowBase">
+      <div class="nav-bar rowBase">
+        <a href="./index.html"
+          ><div class="logo rowBase">
+            <span></span>
+            <span></span></div
+        ></a>
+        <p class="profile-nav__posts">Posts</p>
+        <p class="profile-nav__logout">Logout</p>
+      </div>
+      <div class="main-post container">
+        <div class="post-wrapper rowBase">
+          <div class="post-category rowBase">
+            <button class="btn-common createPost">Add new</button>
+            <div class="post-desc">
+              <input
+                type="text"
+                id="lang"
+                name="lang"
+                placeholder="description"
+              />
+              <small class="error errorDesc"></small>
+            </div>
+
+            <div class="post-title">
+              <input
+                type="text"
+                id="lang"
+                name="lang"
+                placeholder="title"
+                list="title"
+              />
+              <datalist id="title">
+                <option value="bleak">bleak</option>
+                <option value="nonstop">nonstop</option>
+                <option value="legal">legal</option>
+                <option value="granular">granular</option>
+                <option value="early">early</option>
+                <option value="afraid">afraid</option>
+                <option value="unimportant">unimportant</option>
+              </datalist>
+            </div>
+          </div>
+
+          <div class="post-table__header">
+            <div>ID</div>
+            <div>Title</div>
+            <div>Description</div>
+            <div>Tags</div>
+            <div>Actions</div>
+          </div>
+          <div class="post-table__body custom-scroll"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./profile.js"></script>
+</html>

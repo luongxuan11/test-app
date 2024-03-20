@@ -1,0 +1,20 @@
+// responsive
+
+$grid-breakpoints1: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px,
+  xxl: 1356px,
+);
+
+@mixin breakpoints($key) {
+  $breakpoint: map-get($grid-breakpoints1, $key);
+  @if ($breakpoint) {
+    @media (max-width: ($breakpoint - 0.02)) {
+      @content;
+    }
+  } @else {
+    @error "the values #{$key} is not breakpoint!";
+  }
+}
