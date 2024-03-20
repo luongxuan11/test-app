@@ -263,5 +263,5 @@ logoutBtn.addEventListener("click", (e) => {
   localStorage.removeItem("accessToken");
   localStorage.removeItem("refreshToken");
   localStorage.setItem("isLoggedIn", false);
-  window.location.href = "https://dreamy-crepe-0172da.netlify.app";
+  window.location.href = "https://test-app-caz3.onrender.com/index.html";
 });
