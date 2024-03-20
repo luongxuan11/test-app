@@ -60,7 +60,7 @@ const handleAllForm = () => {
           ]);
           if (check)
             return (window.location.href =
-              "https://dreamy-crepe-0172da.netlify.app/test/index.html");
+              "https://dreamy-crepe-0172da.netlify.app");
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
